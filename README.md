@@ -30,9 +30,7 @@ React to Bot commands (e.g. !HUG) in comments to send a Hive Engine tip token an
 
 ## Feature requests and Bug reports
 
-If you want to suggest any feature, feel free to contact me in [Slothbuzz Community Discord](https://discord.gg/Qkx8kpbUJr).
-
-Please report bugs or suggest features through the [GitHub](https://github.com/hannes-stoffel/hug.bot).
+If you want to suggest any feature or report bugs, feel free to contact me in [Slothbuzz Community Discord](https://discord.gg/Qkx8kpbUJr) or use [GitHub](https://github.com/hannes-stoffel/hug.bot).
 
 ## Bot Service
 
