@@ -1,0 +1,4 @@
+<center>Dear {{target_account}}, {{sender_account}} just shared a hug with you.
+I sent {{token_amount}} 🤗<b>{{token_name}}</b>🤗 to your wallet and {{token_amount_caller}} 🤗<b>{{token_name}}</b>🤗 to {{sender_account}}'s wallet.
+<sub>Respond with STOP to remove mentions. Respond with TAGME to reallow mentions.</sub>
+<sub>({{today_tips_count}}/{{max_daily_tips}})</sub></center>

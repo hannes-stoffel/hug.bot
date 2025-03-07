@@ -1,0 +1,4 @@
+{{sender_account}}, sorry! You need more ${{token_name}} to use this command.
+
+The minimum requirement is {{min_staked}} {{token_name}} in wallet.
+<sub>Respond with STOP to remove mentions. Respond with TAGME to reallow mentions.</sub>

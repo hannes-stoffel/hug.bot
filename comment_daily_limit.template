@@ -1,0 +1,17 @@
+{{sender_account}}, sorry!
+
+You are out of hugs for today.
+
+You can call the {{token_name}} bot a maximum of {{max_daily_tips}} per day.
+
+The current call limits are:
+
+|HUG in wallet|calls per day|
+|-|-|
+|0|1🤗|
+|1|2🤗|
+|10|3🤗|
+|100|4🤗|
+|500|5🤗|
+
+<sub>Respond with STOP to remove mentions. Respond with TAGME to reallow mentions.</sub>
