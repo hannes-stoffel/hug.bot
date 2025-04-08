@@ -38,6 +38,17 @@ class BotConfig:
         c = self.db_connection.cursor()
         c.execute(f"CREATE TABLE IF NOT EXISTS {self.CONFIG_TABLE} (name TEXT NOT NULL UNIQUE, value TEXT, PRIMARY KEY(name));")
         c.execute(f"CREATE TABLE IF NOT EXISTS {self.LEVELS_TABLE} (balance REAL NOT NULL, calls INTEGER NOT NULL, tip_recipient REAL NOT NULL, tip_caller REAL NOT NULL);")
+        # check if any config levels are set.
+        c.execute(f"SELECT count(*) rowcount FROM {self.LEVELS_TABLE};")
+        row = c.fetchone()
+        rowcount = row[0]
+        # if there are no config levels set create sample data
+        if (rowcount==0):
+            c.execute(f"INSERT OR REPLACE INTO {self.LEVELS_TABLE} (balance,calls,tip_recipient,tip_caller) VALUES (0,1,1,1);")
+            c.execute(f"INSERT OR REPLACE INTO {self.LEVELS_TABLE} (balance,calls,tip_recipient,tip_caller) VALUES (1,2,1,1);")
+            c.execute(f"INSERT OR REPLACE INTO {self.LEVELS_TABLE} (balance,calls,tip_recipient,tip_caller) VALUES (10,3,1,1);")
+            c.execute(f"INSERT OR REPLACE INTO {self.LEVELS_TABLE} (balance,calls,tip_recipient,tip_caller) VALUES (100,4,1,1);")
+            c.execute(f"INSERT OR REPLACE INTO {self.LEVELS_TABLE} (balance,calls,tip_recipient,tip_caller) VALUES (500,5,1,1);")
         c.close()
         self.db_connection.commit()
 
